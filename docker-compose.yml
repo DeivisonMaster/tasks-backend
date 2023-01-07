@@ -1,0 +1,10 @@
+version: "3"
+services:
+    pg-tarefas:
+        container_name: postgresql-bd
+        image: postgres:9.6
+        ports:
+            - 5433:5432
+        environment:
+            - POSTGRES_DB=tarefas
+            - POSTGRES_PASSWORD=pass
